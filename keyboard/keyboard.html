@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>virtual keyboard</title>
+    <link rel="stylesheet" href="keyboard.css" >
+  </head>
+  <body>
+    <div class="input">     
+      <textarea   id="first"  value="" style="width: 1060px; height: 50px;border: solid 1 px;background-color: #eeeeee;" ></textarea>
+    </div>
+
+    <div class="keyboard-base">   
+      <div class="key"><button id="one" onclick="numbers(1)">1</button></div>
+      <div class="key"><button id="two" onclick="numbers(2)">2</button></div>
+      <div class="key"><button id="three"  onclick="numbers(3)">3</button></div>
+      <div class="key"><button id="four" onclick="numbers(4)">4</button></div>
+      <div class="key"><button id="five" onclick="numbers(5)">5</button></div>
+      <div class="key"><button id="six" onclick="numbers(6)">6</button></div>
+      <div class="key"><button id="seven" onclick="numbers(7)">7</button></div>
+      <div class="key"><button id="eight" onclick="numbers(8)">8</button></div>
+      <div class="key"><button id="nine" onclick="numbers(9)">9</button></div>
+      <div class="key"><button id="zero" onclick="numbers(0)">0</button></div>
+      <div class="key"><button  onclick="operations('+')">+</button></div>
+       <div class="key"> <button onclick="operations('-')">-</button></div>
+      <div class="key"><button onclick="operations('*')">*</button></div>
+      <div class="key"><button onclick="operations('/')">/</button></div>
+      <div class="key"><button onclick="equal()">=</button></div>
+
+
+
+      <div class="key tab"><button onclick="tab()">TAB</button></div>
+      <div class="key "><button onclick="alpha('q')">Q</button></div>
+      <div class="key"><button onclick="alpha('w')">W</button></div>
+      <div class="key"><button onclick="alpha('e')">E</button></div>
+      <div class="key"><button onclick="alpha('r')">R</button></div>
+      <div class="key"><button onclick="alpha('t')">T</button></div>
+      <div class="key"><button onclick="alpha('y')">Y</button></div>
+      <div class="key"><button onclick="alpha('u')">U</button></div>
+      <div class="key"><button onclick="alpha('i')">I</button></div>
+      <div class="key"><button onclick="alpha('o')">O</button></div>
+      <div class="key"><button onclick="alpha('p')">P</button></div>  
+      <div class="key delete"><button onclick="lock()">NL</button></div>
+     
+
+        <div  class="key capslock"><button onclick="caplock()">CAPS LOCK</button></div>
+        <div class="key"><button onclick="alpha('a')">A</button></div>
+       <div class="key"><button onclick="alpha('s')">S</button></div>
+      <div class="key"><button onclick="alpha('d')">D</button></div>
+      <div class="key"><button onclick="alpha('f')">F</button></div>
+      <div class="key"><button onclick="alpha('g')">G</button></div>
+      <div class="key"><button onclick="alpha('h')">H</button></div>
+      <div class="key"><button onclick="alpha('j')">J</button></div>
+      <div class="key"><button onclick="alpha('k')">K</button></div>
+      <div class="key"><button onclick="alpha('l')">L</button></div>
+      <div class="key delete lastitem"><button onclick="backspce()">BACKSPACE</button></div>
+      <div class="key"><button onclick="enters()">ENTER</button></div>
+   
+      
+     
+      
+      
+    <div  class="key left-shift"><button onclick="shft()">SHIFT</button></div>
+      <div class="key"><button onclick="alpha('z')">Z</button></div>
+      <div class="key"><button onclick="alpha('x')">X</button></div>
+      <div class="key"><button onclick="alpha('c')">C</button></div>
+      <div class="key "><button onclick="alpha('v')">V</button></div>
+      <div class="key"><button onclick="alpha('b')">B</button></div>
+      <div class="key"><button onclick="alpha('n')">N</button></div>
+      <div class="key"><button onclick="alpha('m')">M</button></div>
+
+      <div class="key space"><button onclick="space()">SPACE</button></div>
+      <div class="key delete"><button onclick="delet()">DELETE</button></div>  
+    
+    
+      
+    </div>
+    <script src="keyboard.js"></script>
+  </body>
+</html>
